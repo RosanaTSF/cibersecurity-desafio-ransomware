@@ -1,66 +1,86 @@
-Final Project of Santander Bootcamp Cibersegurança #2
+---
 
-Como criar e usar um sistema de criptografia e descriptografia com o algoritmo AES no modo CTR usando Python.
-⚠️ Importante: Este projeto foi criado somente para fins educacionais e não deve ser usado para atividades maliciosas.
+# **Final Project of Santander Bootcamp Cibersegurança #2**
 
-🚀 Funcionalidades
-🔒 Criptografar Arquivos
-Converte um arquivo em uma versão criptografada com a extensão .ransomwaretroll.
-Remove automaticamente o arquivo original após a criptografia.
+Este projeto ensina como criar e usar um sistema de criptografia e descriptografia simples com o algoritmo **AES no modo CTR** utilizando Python.
 
-🔓 Descriptografar Arquivos
-Restaura o arquivo original a partir de um arquivo criptografado.
-Exclui o arquivo criptografado após a recuperação.
+> O **AES (Advanced Encryption Standard)** no modo **CTR (Counter)** é um método de criptografia simétrica que cifra dados em blocos, utilizando um contador único para cada bloco. É eficiente, seguro e permite operações paralelas.
 
-🛠️ Pré-requisitos
-🐍 Instalação do Python
-Certifique-se de ter o Python 3.8 ou superior instalado em seu computador.
-Você pode baixá-lo em: https://www.python.org/downloads/.
+---
 
-📦 Instale a biblioteca necessária
-No terminal, execute o comando abaixo para instalar o módulo pyaes:
-* A biblioteca **pyaes** é um módulo Python que implementa o algoritmo de criptografia AES (Advanced Encryption Standard).
+## 🚀 **Funcionalidades**
 
-bash
-Copiar código
-pip install pyaes
-📂 Estrutura do Projeto
-plaintext
-Copiar código
+### 🔒 **Criptografar Arquivos**
+- Converte um arquivo em uma versão criptografada com a extensão `.ransomwaretroll`.
+- Remove automaticamente o arquivo original após a criptografia.
 
+### 🔓 **Descriptografar Arquivos**
+- Restaura o arquivo original a partir de um arquivo criptografado.
+- Exclui automaticamente o arquivo criptografado após a recuperação.
+
+---
+
+## 🛠️ **Pré-requisitos**
+
+### 🐍 **Instale o Python**
+- Certifique-se de ter o **Python 3.8 ou superior** instalado.  
+  > Faça o download em: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+### 📦 **Instale a biblioteca necessária**
+1. No terminal, execute:
+   ```bash
+   pip install pyaes
+   ```
+2. A biblioteca **pyaes** implementa o algoritmo AES no Python.
+
+---
+
+## 📂 **Estrutura do Projeto**
+
+```plaintext
 cibersecurity-desafio-ransomware/
 ├── encrypter.py         # Script para criptografar arquivos
 ├── decrypter.py         # Script para descriptografar arquivos
 ├── teste.txt            # Arquivo de exemplo para criptografia
 ├── README.md            # Documentação do projeto
+```
 
-🔒 Como Criptografar Arquivos
-Certifique-se de que o arquivo que deseja criptografar está na mesma pasta que o script encrypter.py.
-Abra o terminal e execute o comando:
-bash
-Copiar código
-python encrypter.py
+---
 
-Resultado:
-O arquivo original será criptografado e salvo com a extensão .ransomwaretroll.
+## 🔒 **Como Criptografar Arquivos**
 
-Arquivo original: teste.txt
-Arquivo criptografado: teste.txt.ransomwaretroll
-O arquivo original será automaticamente excluído.
+1. Certifique-se de que o arquivo a ser criptografado está na mesma pasta do script `encrypter.py`.
+2. No terminal, execute:
+   ```bash
+   python encrypter.py
+   ```
+3. **Resultado:**
+   - O arquivo será criptografado com a extensão `.ransomwaretroll`.
+   - O arquivo original será excluído automaticamente.
 
-🔓 Como Descriptografar Arquivos
-Certifique-se de ter a mesma chave de criptografia usada no processo de criptografia.
-Abra o terminal e execute o comando:
-bash
-Copiar código
-python decrypter.py
+   **Exemplo:**
+   - Arquivo original: `teste.txt`
+   - Arquivo criptografado: `teste.txt.ransomwaretroll`
 
-Resultado:
-O arquivo original será restaurado com o mesmo nome.
+---
 
-Arquivo criptografado: teste.txt.ransomwaretroll
-Arquivo restaurado: teste.txt
-O arquivo criptografado será automaticamente excluído.
+## 🔓 **Como Descriptografar Arquivos**
 
-⚠️ Este projeto foi desenvolvido exclusivamente para aprendizado e para ensinar conceitos de cibersegurança.
-O uso inadequado desta aplicação pode violar leis e regulamentos. Nunca utilize para fins ilegais!
+1. Certifique-se de usar a mesma **chave de criptografia** que foi utilizada para criptografar o arquivo.
+2. No terminal, execute:
+   ```bash
+   python decrypter.py
+   ```
+3. **Resultado:**
+   - O arquivo original será restaurado com o mesmo nome.
+   - O arquivo criptografado será excluído automaticamente.
+
+   **Exemplo:**
+   - Arquivo criptografado: `teste.txt.ransomwaretroll`
+   - Arquivo restaurado: `teste.txt`
+
+---
+
+## ⚠️ **Este projeto foi desenvolvido **exclusivamente para aprendizado** e demonstração de conceitos de cibersegurança.**
+
+--- 
