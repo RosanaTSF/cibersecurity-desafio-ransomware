@@ -20,7 +20,7 @@ Este projeto ensina como criar e usar um sistema de criptografia e descriptograf
 ### 🐍 **Instale o Python**
 - Certifique-se de ter o **Python 3.8 ou superior** instalado.  
   > Faça o download em: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-  > 
+  
 ### 📦 **Instale a biblioteca necessária**
 1. No terminal, execute:
    ```bash
@@ -49,7 +49,6 @@ cibersecurity-desafio-ransomware/
 3. **Resultado:**
    - O arquivo será criptografado com a extensão `.ransomwaretroll`.
    - O arquivo original será excluído automaticamente.
-
    - Arquivo original: `teste.txt`
    - Arquivo criptografado: `teste.txt.ransomwaretroll`
 
@@ -65,7 +64,6 @@ cibersecurity-desafio-ransomware/
 3. **Resultado:**
    - O arquivo original será restaurado com o mesmo nome.
    - O arquivo criptografado será excluído automaticamente.
-   - 
    - Arquivo criptografado: `teste.txt.ransomwaretroll`
    - Arquivo restaurado: `teste.txt`
 ---
